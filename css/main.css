@@ -1,0 +1,145 @@
+::-webkit-scrollbar-track{
+    background-color:#999
+}
+::-webkit-scrollbar{
+    width:9px;
+    background-color:#999
+}
+::-webkit-scrollbar-thumb{
+    background-color:#e0967f
+}
+
+
+/*///////////////////////////
+ Landing Heading page 
+///////////////////////////*/
+.img-as-bg{
+    background-image: url("../img/TimonOzean3.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.section-hero{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end
+}
+section.section-hero>*{
+    position:relative;
+}
+section.section-hero h1{
+    margin-top:20%;
+    font-size:4.5em;
+    text-transform:uppercase;
+    letter-spacing:10px;
+    font-weight:300;
+    color:#fff;
+}
+section.section-hero .titles{
+    overflow:hidden;
+    font-size:1.75em;
+    color:#fff;
+}
+section.section-hero .titles p{
+    margin:0;
+    padding:0;
+}
+section.section-hero .down-arrow{
+    width:12px;
+    height:12px;
+    border:3px solid #fff;
+    margin-top:-1px;
+    border-left-width:0;
+    border-top-width:0;
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+section.section-hero .down-arrow.play{
+    animation:scroll-down 2s ease-in-out infinite;
+}
+section.section-hero .down-arrow:nth-child(1){
+    -webkit-animation-delay:0s;
+    -o-animation-delay:0s;
+    animation-delay:0s
+}
+section.section-hero .down-arrow:nth-child(2){
+    -webkit-animation-delay:.1s;
+    -o-animation-delay:.1s;
+    animation-delay:.1s
+}
+section.section-hero .down-arrow:nth-child(3){
+    -webkit-animation-delay:.2s;
+    -o-animation-delay:.2s;
+    animation-delay:.2s
+}
+section.section-hero .btm{
+    position:absolute;
+    display:flex;
+    -webkit-justify-content:space-between;
+    justify-content:space-between;
+    left:0;
+    right:0;
+    bottom:80px;
+    z-index: 10;
+}
+section.section-hero .btm>.left{
+    margin-left:16.5%;
+}
+section.section-hero .btm>.right{
+    margin-right:80px;
+}
+section.section-hero .btm .scroll-down-indicator{
+    -webkit-transform:translate3d(-50%,0,0);
+    -o-transform:translate3d(-50%,0,0);
+    -ms-transform:translate3d(-50%,0,0);
+    transform:translate3d(-50%,0,0);
+    cursor:pointer;
+}
+section.section-hero .btm ul.connect{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:3px;
+}
+section.section-hero .btm ul.connect>li{
+    display:inline-block;
+    height:48px;
+    width:48px;
+    font-size:2.4em;
+    line-height:54px;
+    text-align:center;
+    border-radius:48px;
+    transition:background-color .3s ease;
+}
+section.section-hero .btm ul.connect>li:hover{
+    background-color:#c85431;
+}
+section.section-hero .btm ul.connect>li a:link,section.section-hero .btm ul.connect>li a:visited{
+    color:rgba(255,255,255,.8);
+}
+section.section-hero .btm ul.connect>li a:link:after,section.section-hero .btm ul.connect>li a:visited:after{
+    display:none;
+}
+section.section-hero .btm ul.connect>li a:active,section.section-hero .btm ul.connect>li a:hover{
+    color:#fff;
+}
+section.section-hero svg.hero-triangles{
+    position:absolute;
+    z-index:1;
+    left:0;
+    bottom:0;
+    width:33%;
+}
+section.section-hero svg.hero-triangles>.primary-triangle{
+    fill:#d67456;
+}
+section.section-hero svg.hero-triangles>.gray-triangle{
+    fill:#000;
+    opacity:.5;
+}
